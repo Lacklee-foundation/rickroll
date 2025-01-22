@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>run</title>
+    <title>Full Page Video</title>
     <style>
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
         }
-        iframe {
+        video {
             border: none;
             width: 100%;
             height: 100%;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
-    <iframe src="https://shattereddisk.github.io/rickroll/rickroll.mp4"></iframe>
+    <video id="video" autoplay muted loop>
+        <source src="https://shattereddisk.github.io/rickroll/rickroll.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <script>
+        // Open GitHub in a new tab
+        window.open('https://github.com/Lacklee-foundation/rickroll/blob/main/index.html', '_blank');
+    </script>
 </body>
 </html>
